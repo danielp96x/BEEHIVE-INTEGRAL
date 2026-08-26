@@ -5,119 +5,408 @@
 
 
 // =====================================================
-// PEDIDO DE HERRAMIENTAS
+// CATÁLOGO DE HERRAMIENTAS
 // =====================================================
-
-// Catálogo inicial de herramientas.
-// Los datos que todavía no conocemos quedan preparados
-// para ser completados posteriormente.
+//
+// Para agregar una nueva herramienta:
+// 1. Agrega un nuevo objeto aquí.
+// 2. Pon su imagen en:
+//    assets/images/herramientas/
+// 3. Escribe el nombre exacto de la imagen en "imagen".
+//
+// NO necesitas modificar herramientas.html.
+// =====================================================
 
 const herramientas = [
 
+    // =================================================
+    // 1. TALADRO TRUPER
+    // =================================================
+
     {
-        nombre: "Taladro",
+        nombre: "Taladro percutor TRUPER",
         icono: "🔨",
-        marca: "Por definir",
-        modelo: "Por definir",
-        estado: "Por confirmar",
-        precioHora: "Por definir",
-        precioDia: "Por definir",
+        imagen: "taladro-truper.jpeg",
+        marca: "TRUPER",
+        modelo: "ROTO-1/2A7",
+        estado: "Perfecto estado",
+        cantidadDisponible: 1,
+        precioHora: "$20.000",
+        precioDia: "$480.000",
+        deposito: "$80.000",
         descripcion:
-            "Herramienta para trabajos de perforación y mantenimiento."
+            "Taladro percutor TRUPER para trabajos de perforación, construcción y mantenimiento. Incluye llave de mandril."
     },
+
+
+    // =================================================
+    // 2. PULIDORA
+    // =================================================
 
     {
         nombre: "Pulidora",
         icono: "⚙️",
+        imagen: "",
         marca: "Por definir",
         modelo: "Por definir",
         estado: "Por confirmar",
+        cantidadDisponible: 1,
         precioHora: "Por definir",
         precioDia: "Por definir",
+        deposito: "Por definir",
         descripcion:
             "Herramienta para trabajos de pulido, corte y mantenimiento."
     },
 
+
+    // =================================================
+    // 3. SEGUETA
+    // =================================================
+
     {
         nombre: "Segueta",
         icono: "🪚",
+        imagen: "",
         marca: "Por definir",
         modelo: "Por definir",
         estado: "Por confirmar",
+        cantidadDisponible: 1,
         precioHora: "Por definir",
         precioDia: "Por definir",
+        deposito: "Por definir",
         descripcion:
             "Herramienta para trabajos de corte y mantenimiento."
     },
 
+
+    // =================================================
+    // 4. JUEGO DE DESTORNILLADORES TRUPER
+    // =================================================
+
     {
-        nombre: "Juego de destornilladores",
+        nombre: "Juego de destornilladores TRUPER",
         icono: "🪛",
-        marca: "Por definir",
-        modelo: "Por definir",
-        estado: "Por confirmar",
-        precioHora: "Por definir",
-        precioDia: "Por definir",
+        imagen: "destornilladores-truper.jpeg",
+        marca: "TRUPER",
+        modelo: "14196 / DTJ-7D",
+        estado: "Perfecto estado",
+        cantidadDisponible: 1,
+        piezas: "10 piezas",
+        precioHora: "$20.000",
+        precioDia: "$480.000",
+        deposito: "$80.000",
         descripcion:
-            "Juego de herramientas para trabajos de mantenimiento y reparación."
+            "Juego de destornilladores eléctricos aislados TRUPER para trabajos de mantenimiento y reparación. Incluye 10 piezas y aislamiento de hasta 1000 V."
     },
+
+
+    // =================================================
+    // 5. JUEGO DE BRISTOL
+    // =================================================
 
     {
         nombre: "Juego de Bristol",
         icono: "🔧",
+        imagen: "",
         marca: "Por definir",
         modelo: "Por definir",
         estado: "Por confirmar",
+        cantidadDisponible: 1,
         precioHora: "Por definir",
         precioDia: "Por definir",
+        deposito: "Por definir",
         descripcion:
-            "Juego de llaves Bristol para reparación y mantenimiento."
+            "Juego de llaves Bristol para trabajos de reparación y mantenimiento."
     },
+
+
+    // =================================================
+    // 6. DESTORNILLADORES ELÉCTRICOS
+    // =================================================
 
     {
         nombre: "Juego de destornilladores eléctricos",
         icono: "⚡",
+        imagen: "",
         marca: "Por definir",
         modelo: "Por definir",
         estado: "Por confirmar",
+        cantidadDisponible: 1,
         precioHora: "Por definir",
         precioDia: "Por definir",
+        deposito: "Por definir",
         descripcion:
             "Herramientas para trabajos eléctricos, mantenimiento y reparación."
     },
 
+
+    // =================================================
+    // 7. TESTER DIGITAL
+    // =================================================
+
     {
         nombre: "Tester digital",
         icono: "📟",
+        imagen: "",
         marca: "Por definir",
         modelo: "Por definir",
         estado: "Por confirmar",
+        cantidadDisponible: 1,
         precioHora: "Por definir",
         precioDia: "Por definir",
+        deposito: "Por definir",
         descripcion:
             "Instrumento para realizar diferentes mediciones eléctricas."
     },
 
+
+    // =================================================
+    // 8. TESTER NORMAL
+    // =================================================
+
     {
         nombre: "Tester normal",
         icono: "📏",
+        imagen: "",
         marca: "Por definir",
         modelo: "Por definir",
         estado: "Por confirmar",
+        cantidadDisponible: 1,
         precioHora: "Por definir",
         precioDia: "Por definir",
+        deposito: "Por definir",
         descripcion:
-            "Herramienta de medición para trabajos eléctricos y mantenimiento."
+            "Herramienta de medición para trabajos eléctricos y de mantenimiento."
+    },
+
+
+    // =================================================
+    // 9. ALICATE TRUPER
+    // =================================================
+
+    {
+        nombre: "Alicate TRUPER",
+        icono: "🔧",
+        imagen: "alicate-truper.jpeg",
+        marca: "TRUPER",
+        modelo: "N/A",
+        estado: "Perfecto estado",
+        cantidadDisponible: 1,
+        precioHora: "$20.000",
+        precioDia: "$480.000",
+        deposito: "$80.000",
+        descripcion:
+            "Alicate TRUPER para trabajos de mantenimiento, reparación y diferentes labores de construcción."
+    },
+
+
+    // =================================================
+    // 10. EXTENSIÓN TRUPER
+    // =================================================
+
+    {
+        nombre: "Extensión eléctrica TRUPER",
+        icono: "🔌",
+        imagen: "extension-truper.jpeg",
+        marca: "TRUPER",
+        modelo: "N/A",
+        estado: "Perfecto estado",
+        cantidadDisponible: 1,
+        precioHora: "$20.000",
+        precioDia: "$480.000",
+        deposito: "$80.000",
+        descripcion:
+            "Extensión eléctrica TRUPER para trabajos de construcción, mantenimiento y diferentes proyectos."
     }
 
 ];
 
 
 // =====================================================
-// CARRITO / PEDIDO
+// PEDIDO DE HERRAMIENTAS
 // =====================================================
 
 let pedidoHerramientas = [];
+
+
+// =====================================================
+// GENERAR CATÁLOGO AUTOMÁTICAMENTE
+// =====================================================
+
+function generarCatalogo() {
+
+    const catalogo =
+        document.getElementById("catalogoHerramientas");
+
+    if (!catalogo) {
+        return;
+    }
+
+
+    catalogo.innerHTML = "";
+
+
+    herramientas.forEach((herramienta, indice) => {
+
+        const tarjeta =
+            document.createElement("article");
+
+        tarjeta.className =
+            "quick-card herramienta-card";
+
+
+        // ---------------------------------------------
+        // IMAGEN
+        // ---------------------------------------------
+
+        let contenidoImagen = "";
+
+
+        if (herramienta.imagen) {
+
+            const rutaImagen =
+                "../assets/images/herramientas/" +
+                herramienta.imagen;
+
+
+            contenidoImagen = `
+
+                <div class="herramienta-imagen">
+<img
+    src="${rutaImagen}"
+    alt="${herramienta.nombre}"
+    loading="lazy"
+    onerror="this.parentElement.innerHTML='<div style=&quot;padding:20px;text-align:center;&quot;>❌ Imagen no encontrada<br><small>${herramienta.imagen}</small></div>'">
+                </div>
+
+            `;
+
+        } else {
+
+            contenidoImagen = `
+
+                <div class="quick-icon">
+
+                    ${herramienta.icono}
+
+                </div>
+
+            `;
+
+        }
+
+
+        // ---------------------------------------------
+        // PIEZAS
+        // ---------------------------------------------
+
+        const piezasHTML =
+            herramienta.piezas
+                ? `<strong>Piezas:</strong> ${herramienta.piezas}<br>`
+                : "";
+
+
+        // ---------------------------------------------
+        // TARJETA
+        // ---------------------------------------------
+
+        tarjeta.innerHTML = `
+
+            ${contenidoImagen}
+
+
+            <div>
+
+                <span class="herramienta-numero">
+
+                    HERRAMIENTA #${indice + 1}
+
+                </span>
+
+
+                <h3>
+
+                    ${herramienta.nombre}
+
+                </h3>
+
+
+                <p>
+
+                    ${herramienta.descripcion}
+
+                </p>
+
+
+                <p>
+
+                    <strong>Marca:</strong>
+                    ${herramienta.marca}
+
+                    <br>
+
+                    <strong>Modelo:</strong>
+                    ${herramienta.modelo}
+
+                    <br>
+
+                    <strong>Estado:</strong>
+                    ${herramienta.estado}
+
+                    <br>
+
+                    ${piezasHTML}
+
+                    <strong>Disponible:</strong>
+                    ${herramienta.cantidadDisponible}
+
+                    <br>
+
+                    <strong>Precio/hora:</strong>
+                    ${herramienta.precioHora}
+
+                    <br>
+
+                    <strong>Precio/día:</strong>
+                    ${herramienta.precioDia}
+
+                    <br>
+
+                    <strong>Depósito:</strong>
+                    ${herramienta.deposito}
+
+                </p>
+
+
+                <button
+                    type="button"
+                    class="btn btn-secondary btn-ver-herramienta"
+                    onclick="verHerramienta(${indice})">
+
+                    Ver detalles
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="agregarHerramienta(${indice})">
+
+                    + Agregar al pedido
+
+                </button>
+
+            </div>
+
+        `;
+
+
+        catalogo.appendChild(tarjeta);
+
+    });
+
+}
 
 
 // =====================================================
@@ -126,21 +415,36 @@ let pedidoHerramientas = [];
 
 function agregarHerramienta(indice) {
 
-    const herramienta = herramientas[indice];
+    const herramienta =
+        herramientas[indice];
 
     if (!herramienta) {
         return;
     }
 
 
-    // Buscar si ya existe en el pedido
-
-    const existente = pedidoHerramientas.find(
-        item => item.indice === indice
-    );
+    const existente =
+        pedidoHerramientas.find(
+            item => item.indice === indice
+        );
 
 
     if (existente) {
+
+        if (
+            existente.cantidad >=
+            herramienta.cantidadDisponible
+        ) {
+
+            alert(
+                "La cantidad disponible de esta herramienta es " +
+                herramienta.cantidadDisponible + "."
+            );
+
+            return;
+
+        }
+
 
         existente.cantidad += 1;
 
@@ -160,14 +464,16 @@ function agregarHerramienta(indice) {
     actualizarPedido();
 
 
-    // Llevar al usuario hasta su pedido
+    const pedido =
+        document.getElementById("pedido");
 
-    const pedido = document.getElementById("pedido");
 
     if (pedido) {
 
         pedido.scrollIntoView({
+
             behavior: "smooth"
+
         });
 
     }
@@ -181,9 +487,10 @@ function agregarHerramienta(indice) {
 
 function quitarHerramienta(indice) {
 
-    const item = pedidoHerramientas.find(
-        elemento => elemento.indice === indice
-    );
+    const item =
+        pedidoHerramientas.find(
+            elemento => elemento.indice === indice
+        );
 
 
     if (!item) {
@@ -250,7 +557,9 @@ function actualizarPedido() {
     }
 
 
-    // Si está vacío
+    // =================================================
+    // PEDIDO VACÍO
+    // =================================================
 
     if (pedidoHerramientas.length === 0) {
 
@@ -259,18 +568,26 @@ function actualizarPedido() {
             <div class="quick-card">
 
                 <div class="quick-icon">
+
                     🛒
+
                 </div>
+
 
                 <div>
 
                     <h3>
+
                         Tu pedido está vacío
+
                     </h3>
 
+
                     <p>
+
                         Agrega una o varias herramientas
                         desde nuestro catálogo.
+
                     </p>
 
                 </div>
@@ -316,8 +633,14 @@ function actualizarPedido() {
             herramientas[item.indice];
 
 
+        if (!herramienta) {
+            return;
+        }
+
+
         const tarjeta =
             document.createElement("div");
+
 
         tarjeta.className =
             "quick-card";
@@ -358,6 +681,16 @@ function actualizarPedido() {
 
                     Modelo:
                     ${herramienta.modelo}
+
+                    <br>
+
+                    Precio/hora:
+                    ${herramienta.precioHora}
+
+                    <br>
+
+                    Precio/día:
+                    ${herramienta.precioDia}
 
                 </p>
 
@@ -406,12 +739,13 @@ function actualizarPedido() {
 
 
     // =================================================
-    // CONTAR TOTAL DE HERRAMIENTAS
+    // CONTAR TOTAL
     // =================================================
 
     const cantidadTotal =
         pedidoHerramientas.reduce(
-            (total, item) => total + item.cantidad,
+            (total, item) =>
+                total + item.cantidad,
             0
         );
 
@@ -451,7 +785,7 @@ function verHerramienta(indice) {
     }
 
 
-    const mensaje =
+    let mensaje =
 
         `${herramienta.icono} ${herramienta.nombre}\n\n` +
 
@@ -463,9 +797,21 @@ function verHerramienta(indice) {
 
         `Estado: ${herramienta.estado}\n` +
 
+        `Disponible: ${herramienta.cantidadDisponible}\n` +
+
         `Precio por hora: ${herramienta.precioHora}\n` +
 
-        `Precio por día: ${herramienta.precioDia}`;
+        `Precio por día: ${herramienta.precioDia}\n` +
+
+        `Depósito de garantía: ${herramienta.deposito}`;
+
+
+    if (herramienta.piezas) {
+
+        mensaje +=
+            `\nPiezas: ${herramienta.piezas}`;
+
+    }
 
 
     alert(mensaje);
@@ -526,16 +872,12 @@ function enviarPedidoWhatsApp() {
 
     let texto =
 
-        `🐝 *PEDIDO DE ALQUILER - BEE HIVE RENTALS*
+        `🐝 *PEDIDO DE ALQUILER - BEE HIVE RENTALS*\n\n` +
 
-Hola BEE HIVE, quiero consultar la disponibilidad y condiciones para alquilar las siguientes herramientas:
+        `Hola BEE HIVE, quiero consultar la disponibilidad ` +
 
-`;
+        `y condiciones para alquilar las siguientes herramientas:\n\n`;
 
-
-    // =================================================
-    // AGREGAR HERRAMIENTAS AL MENSAJE
-    // =================================================
 
     pedidoHerramientas.forEach((item, posicion) => {
 
@@ -545,7 +887,7 @@ Hola BEE HIVE, quiero consultar la disponibilidad y condiciones para alquilar la
 
         texto +=
 
-            `${posicion + 1}. ${herramienta.nombre}\n` +
+            `${posicion + 1}. *${herramienta.nombre}*\n` +
 
             `   Cantidad: ${item.cantidad}\n` +
 
@@ -553,34 +895,42 @@ Hola BEE HIVE, quiero consultar la disponibilidad y condiciones para alquilar la
 
             `   Modelo: ${herramienta.modelo}\n` +
 
-            `   Modalidad: Por hora o por día\n\n`;
+            `   Precio/hora: ${herramienta.precioHora}\n` +
+
+            `   Precio/día: ${herramienta.precioDia}\n` +
+
+            `   Depósito: ${herramienta.deposito}\n\n`;
 
     });
 
 
     texto +=
 
-        `━━━━━━━━━━━━━━━━━━━━
+        `━━━━━━━━━━━━━━━━━━━━\n\n` +
 
-📌 *Importante:*
-Deseo conocer la disponibilidad, precio final, duración del alquiler y condiciones correspondientes.
+        `📌 *Importante:*\n` +
 
-📍 Tocancipá, Cundinamarca
+        `Deseo conocer la disponibilidad, duración del alquiler ` +
 
-Gracias.
-BEE HIVE INMOBILIARIA 🐝`;
+        `y condiciones correspondientes.\n\n` +
+
+        `📍 Tocancipá, Cundinamarca\n\n` +
+
+        `Gracias.\n` +
+
+        `BEE HIVE INMOBILIARIA 🐝`;
 
 
     const urlWhatsApp =
-    "https://api.whatsapp.com/send?phone=" +
-    numeroWhatsApp +
-    "&text=" +
-    encodeURIComponent(texto);
 
+        "https://api.whatsapp.com/send?phone=" +
 
-    // =================================================
-    // ABRIR WHATSAPP
-    // =================================================
+        numeroWhatsApp +
+
+        "&text=" +
+
+        encodeURIComponent(texto);
+
 
     window.location.href =
         urlWhatsApp;
@@ -598,6 +948,7 @@ function enviarWhatsApp(event) {
         event.preventDefault();
     }
 
+
     const nombreElement =
         document.getElementById("nombre");
 
@@ -613,9 +964,6 @@ function enviarWhatsApp(event) {
     const mensajeElement =
         document.getElementById("mensaje");
 
-
-    // Si no estamos en contacto.html,
-    // simplemente no hacer nada.
 
     if (
         !nombreElement ||
@@ -720,27 +1068,25 @@ function enviarWhatsApp(event) {
 
     const textoWhatsApp =
 
-        `🐝 *NUEVA CONSULTA DESDE LA PÁGINA WEB*
+        `🐝 *NUEVA CONSULTA DESDE LA PÁGINA WEB*\n\n` +
 
-👤 *Nombre:* ${nombre}
+        `👤 *Nombre:* ${nombre}\n\n` +
 
-📧 *Correo:* ${correo}
+        `📧 *Correo:* ${correo}\n\n` +
 
-📱 *Teléfono / WhatsApp:* ${telefono}
+        `📱 *Teléfono / WhatsApp:* ${telefono}\n\n` +
 
-🏠 *Servicio solicitado:* ${servicio}
+        `🏠 *Servicio solicitado:* ${servicio}\n\n` +
 
-📝 *Mensaje:*
-${mensaje}
+        `📝 *Mensaje:*\n${mensaje}\n\n` +
 
-━━━━━━━━━━━━━━━━━━━━
+        `━━━━━━━━━━━━━━━━━━━━\n\n` +
 
-*BEE HIVE INMOBILIARIA*
+        `*BEE HIVE INMOBILIARIA*\n\n` +
 
-📍 Tocancipá, Cundinamarca
+        `📍 Tocancipá, Cundinamarca\n\n` +
 
-⏰ 7:00 a. m. a 7:00 p. m.
-`;
+        `⏰ 7:00 a. m. a 7:00 p. m.`;
 
 
     const urlWhatsApp =
@@ -749,7 +1095,7 @@ ${mensaje}
 
         numeroWhatsApp +
 
-        "?text=" +
+        "&text=" +
 
         encodeURIComponent(
             textoWhatsApp
@@ -763,32 +1109,57 @@ ${mensaje}
 
 
 // =====================================================
-// MENÚ MÓVIL
+// MENÚ MÓVIL + INICIALIZACIÓN
 // =====================================================
 
 document.addEventListener(
     "DOMContentLoaded",
     function () {
-const menuBtn = document.getElementById("menuBtn");
-const nav = document.querySelector(".nav");
 
-if (menuBtn && nav) {
+        // ---------------------------------------------
+        // MENÚ MÓVIL
+        // ---------------------------------------------
 
-    menuBtn.addEventListener("click", () => {
+        const menuBtn =
+            document.getElementById("menuBtn");
 
-        const abierto = nav.classList.toggle("show");
-
-        menuBtn.setAttribute(
-            "aria-expanded",
-            abierto ? "true" : "false"
-        );
-
-    });
-
-}
+        const nav =
+            document.querySelector(".nav");
 
 
-        // Inicializar pedido
+        if (menuBtn && nav) {
+
+            menuBtn.addEventListener(
+                "click",
+                () => {
+
+                    const abierto =
+                        nav.classList.toggle("show");
+
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        abierto
+                            ? "true"
+                            : "false"
+                    );
+
+                }
+            );
+
+        }
+
+
+        // ---------------------------------------------
+        // GENERAR CATÁLOGO
+        // ---------------------------------------------
+
+        generarCatalogo();
+
+
+        // ---------------------------------------------
+        // INICIALIZAR PEDIDO
+        // ---------------------------------------------
 
         actualizarPedido();
 

@@ -1335,3 +1335,25 @@ button {
         font-size: 26px;
     }
 }
+/* =====================================================
+   IMÁGENES DEL CATÁLOGO DE HERRAMIENTAS
+===================================================== */
+
+.herramienta-imagen {
+    width: 100%;
+    max-width: 180px;
+    height: 150px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.herramienta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
